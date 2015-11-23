@@ -27,13 +27,19 @@ angular.module('myApp.view1', ['ngRoute'])
 		url: "https://api.github.com/users/" + $scope.user + "/repos"
 	}
 		var response = $http(config);
+		$scope.github_repos_name = [];
 		response.success(function(data, status, headers, config){
-			//each de jquery
-			$scope.github_repos = data;
+			$scope.github_repos_owner_login = data[0].owner.login;
+
+			for (var i = 0; i < data.length; i++) {
+				// $scope.github_repos_name[i] = data[i].name;
+				$scope.github_repos_name = data;
+
+			};
 			alert("Bien!! " );
 
 		}).error(function(data, status, headers, config){
-			$scope.github_repos = "Ha fallado la peticion. Estado: " + status;
+			$scope.details = "Ha fallado la peticion. Estado: " + status;
 		});
 	};
 

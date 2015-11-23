@@ -5,7 +5,15 @@
 <repos jdata = github_repos ></repos>
 <input type = "button" value = "OK" name = "fetch" ng-model = "ok_btn" ng-click = "getRepos()">
 </form>
-<p class = "answer" ng-model = "details">{{user}} repos are {{ github_repos }}</p>
+<br>
+<p class = "answer" ng-model = "github_repos_owner_login">Repo owner: <strong> {{ github_repos_owner_login }} </strong></p>
+<div class = "container" ng-repeat = "repo in github_repos_name">
+	<ul>
+		<li><strong>{{ repo.name }}</strong></li>
+	</ul>
+
+</div>
+
 <br>
 <p ng-model = "details">{{ details }}</p>
 

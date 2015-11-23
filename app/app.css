@@ -18,11 +18,15 @@
 }
 
 .answer{
-  float: right;
-  width: 50%;
+  /*float: right;
+  width: 50%;*/
   margin: 0;
   padding: 10;
   overflow: hidden;
+}
+.container{
+  padding-left: 15px;
+  overflow: scroll-y;
 }
 br{
   clear: both;
