@@ -1,0 +1,59 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+.menu-container{
+  padding: 10px 15px 30px 25px;
+}
+.form-user{
+  float: left;
+  width: 50 %;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+}
+
+.answer{
+  float: right;
+  width: 50%;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+}
+br{
+  clear: both;
+}
+
+.footer{
+  padding-top: 25px;
+  padding-left: 15px;
+  background-color: #309BC0;
+  color: #fff;
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

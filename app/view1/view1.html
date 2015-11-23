@@ -1,0 +1,11 @@
+<form class = "form-user">
+<repos></repos>
+<input type = "button" value = "OK" name = "fetch" ng-model = "ok_btn" ng-click = "getRepos()">
+<br>
+<repos jdata = github_repos ></repos>
+<input type = "button" value = "OK" name = "fetch" ng-model = "ok_btn" ng-click = "getRepos()">
+</form>
+<p class = "answer" ng-model = "details">{{user}} repos are {{ github_repos }}</p>
+<br>
+<p ng-model = "details">{{ details }}</p>
+
