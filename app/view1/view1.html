@@ -7,6 +7,7 @@
 </form>
 <br>
 <p class = "answer" ng-model = "github_repos_owner_login">Repo owner: <strong> {{ github_repos_owner_login }} </strong></p>
+
 <div class = "container" ng-repeat = "repo in github_repos_name">
 	<ul>
 		<li><strong>{{ repo.name }}</strong> -- <strong>description:</strong> {{repo.description}}</li>

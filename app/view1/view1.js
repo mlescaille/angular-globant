@@ -33,7 +33,7 @@ angular.module('myApp.view1', ['ngRoute'])
 				$scope.github_repos_owner_login = data[0].owner.login;
 				$scope.github_repos_name = data;
 
-				alert("Bien!! " );
+				alert("Bien!! ");
 			}
 
 		}).error(function(data, status, headers, config){
